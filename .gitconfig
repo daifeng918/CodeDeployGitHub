@@ -1,0 +1,3 @@
+l "https://git-codecommit.us-east-1.amazonaws.com"]
+helper = !aws codecommit credential-helper --profile bch-o1-cr-ss_ca-codecommit-rl_ue1 $@
+UseHttpPath = true
