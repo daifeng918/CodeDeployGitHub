@@ -17,5 +17,5 @@ echo "{ \"accounts\": [ {\"default\": true,\"id\": \"$accoutid\",\"name\" : \"$p
 
 cat  config.json
 docker build -t cloudmapper .
-docker run -ti  -e 'echo $AWS_ACCESS_KEY_ID' -e 'echo $AWS_SECRET_ACCESS_KEY' cloudmapper /bin/bash
+docker run -ti  -e 'echo $AWS_ACCESS_KEY_ID' -e 'echo $AWS_SECRET_ACCESS_KEY' -p 8000:8000 cloudmapper /bin/bash
 rm tmp tmpc
