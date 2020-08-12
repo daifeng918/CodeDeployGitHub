@@ -14,4 +14,4 @@ RUN apt-get install -y bash
 COPY . /opt/cloudmapper
 RUN pip install -r requirements.txt
 RUN bash
-RUN ./start.sh
+#RUN ./start.sh
