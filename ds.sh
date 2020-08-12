@@ -10,7 +10,7 @@ AWS_SECRET_ACCESS_KEY=$(sed -n '2p' < tmp)
 #Create Temp credentials file
 echo "[default]" > tmpc
 cat ~/.aws/credentials | grep -A  4 $profile | grep -A  2 aws_access_key_id >> tmpc
-echo "[dv-ccst]" >> tmpc
+echo "[$profile]" >> tmpc
 cat ~/.aws/credentials | grep -A  4 $profile | grep -A  2 aws_access_key_id >> tmpc
 cat tmpc
 echo "{ \"accounts\": [ {\"default\": true,\"id\": \"$accoutid\",\"name\" : \"$profile\"}], \"cidrs\": {} }" >  config.json
