@@ -13,6 +13,6 @@ python cloudmapper.py collect --account $Account --regions us-east-1
 python cloudmapper.py collect --account $Account --regions us-east-2
 python cloudmapper.py report --account $Account 
 python cloudmapper.py prepare --account $Account
-python cloudmapper.py webserver
+python cloudmapper.py webserver --public
 
 
